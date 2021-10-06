@@ -52,8 +52,72 @@ header {
   background-color: var(--background-secondary);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 main {
   flex: 1 0 auto;
+}
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: auto -1rem;
+  padding: 0;
+  width: 100%;
+}
+
+.color-palette > * {
+  display: flex;
+  flex: 1 0 20%;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.color-palette > *:nth-child(1) .color {
+  background-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.color-palette > *:nth-child(2) .color {
+  background-color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+.color-palette > *:nth-child(3) .color {
+  background-color: var(--text-tertiary);
+  color: var(--text-tertiary);
+}
+
+.color-palette > *:nth-child(4) .color {
+  background-color: var(--background-primary);
+  color: var(--background-primary);
+}
+
+.color-palette > *:nth-child(5) .color {
+  background-color: var(--background-secondary);
+  color: var(--background-secondary);
+}
+
+.color-palette > * .color {
+  border-radius: 0.25rem;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.color-palette > * .color:before {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  content: '';
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
