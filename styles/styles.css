@@ -46,6 +46,7 @@ a {
 
 a:hover {
   color: var(--text-tertiary);
+  text-decoration: none;
 }
 
 header {

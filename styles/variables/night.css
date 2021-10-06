@@ -1,7 +1,7 @@
 :root {
-  --text-primary: #011826;
-  --text-secondary: #032940;
-  --text-tertiary: #395D73;
-  --background-primary: #8C7F58;
-  --background-secondary: #D9C68F;
+  --text-primary: #d9c68f;
+  --text-secondary: #f1e6c5;
+  --text-tertiary: #f1ecdc;
+  --background-primary: #011826;
+  --background-secondary: #032940;
 }
