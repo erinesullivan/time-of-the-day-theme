@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: var(--background-primary);
+  background-color: var(--background-secondary);
   color: var(--text-primary);
   display: flex;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -28,6 +28,7 @@ body {
 }
 
 body > * {
+  background-color: var(--background-primary);
   flex: 0 0 auto;
   margin: 0 auto;
   max-width: 80rem;
@@ -49,24 +50,21 @@ a:hover {
   text-decoration: none;
 }
 
-header {
-  background-color: var(--background-secondary);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
 main {
   flex: 1 0 auto;
 }
 
 .color-palette {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  margin: auto -1rem;
+  margin: auto -0.5rem;
   padding: 0;
-  width: 100%;
+}
+
+@media screen and (max-width: 50rem) {
+  .color-palette {
+    flex-direction: column;
+  }
 }
 
 .color-palette > * {
@@ -75,7 +73,7 @@ main {
   flex-direction: column;
   height: auto;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .color-palette > *:nth-child(1) .color {
